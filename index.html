@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9e3e3;
+    font-family: 'Arial', sans-serif;
+    flex-direction: column;
+    padding: 20px; /* Added padding for responsiveness */
+}
+
+.container {
+    text-align: center;
+    max-width: 90%; /* Limited max-width for better fit */
+    margin: 0 auto; /* Center the container */
+    display: flex; /* Flex display */
+    justify-content: center; /* Center align the content */
+    align-items: center; /* Center align the content */
+    flex-direction: column; /* Stack the content vertically */
+    height: 100%; /* Full height to allow centering */
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #d32f2f;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex; /* Flex display for better alignment */
+    justify-content: center; /* Center align the buttons */
+    flex-wrap: wrap; /* Allow wrapping of buttons */
+}
+
+.yes-button, .no-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin: 10px; /* Added margin for spacing */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.yes-button {
+    background-color: #04ff00;
+}
+
+.no-button {
+    background-color: #f44336;
+}
+
+.gif_container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: block;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will you be my Valentine?</h1>
+        <div class="buttons">
+            <button class="yes-button" onclick="handleYesClick()">Yes</button>
+            <button class="no-button" onclick="handleNoClick()">No</button>
+        </div>
+        <div class="gif_container">
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute GIF">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
